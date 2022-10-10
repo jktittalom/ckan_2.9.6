@@ -7,7 +7,7 @@ from flask import Flask
 app = Flask('Terria Master JSON WebServer')
 
 @app.route('/terriamasterjson')
-def terriamasterjson’():
+def terriamasterjson():
     return [1,2,3]
 
 
