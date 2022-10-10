@@ -1,3 +1,8 @@
+from pathlib import Path
+import json
+import os
+
+
 from flask import Flask
 app = Flask('Terria Master JSON WebServer')
 
@@ -9,8 +14,9 @@ def index():
 def hello():
    return "hello world"
 
-@app.route('/test')
+@app.route('/test'):
 def test():
-	print("test Welcome!!!")
-	
-   return "hello world"
+    print("test Welcome!!!")
+    hpath = Path.home()
+    cpath = Path.cwd()
+    return "hello test cpath: {}, home: {}".format(cpath, hpath)
