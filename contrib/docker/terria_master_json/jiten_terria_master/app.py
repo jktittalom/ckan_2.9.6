@@ -8,4 +8,3 @@ def terriamasterjson():
 @app.route('/test')
 def test():
 	print("Welcome Jiten!!!")
-    return [1,2,3]
