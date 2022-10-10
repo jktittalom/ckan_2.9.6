@@ -3,9 +3,11 @@ app = Flask('Terria Master JSON WebServer')
 
 @app.route('/')
 def terriamasterjson():
-    return [1,2,3]
+	print("Welcome Jiten!!!")
+    return "ok Jiten"
+
 
 @app.route('/test')
 def test():
-	print("Welcome Jiten!!!")
-	return None
+	print("Test Welcome Jiten!!!")
+    return "Test Ok Jiten"
