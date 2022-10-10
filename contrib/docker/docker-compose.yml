@@ -81,3 +81,9 @@ services:
   redis:
     container_name: redis
     image: redis:latest
+
+  terriamasterjson:
+    container_name: terriacataloguejson
+    image: ubuntu:focal-20210119
+    volumes:
+      - ckan_home:/usr/lib/ckan
