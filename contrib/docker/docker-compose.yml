@@ -84,6 +84,10 @@ services:
 
   terriamasterjson:
     container_name: terriacataloguejson
+    
+    ports:
+      - "5001:5000"
+
     build:
       context: ./terria_master_json/
     volumes:
