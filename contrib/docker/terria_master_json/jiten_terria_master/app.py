@@ -14,7 +14,7 @@ def index():
 def hello():
    return "hello world"
 
-@app.route('/test'):
+@app.route('/test')
 def test():
     print("test Welcome!!!")
     hpath = Path.home()
