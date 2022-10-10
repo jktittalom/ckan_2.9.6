@@ -315,8 +315,9 @@ def terriamasterjson():
             focusArr.append(dict(focus))
             # by default it consider current directory
     #return "master Json111"
-    cpath = Path.cwd()
-    path = "{}/allCatalogueJson".format(cpath)
+    #cpath = Path.cwd()
+    cpath = '/usr/lib/ckan/terria_catalog'
+    path = "{}".format(cpath)
     counter = 1
     for fileName in os.listdir(path):
         # print("{} -- Reading Files:{}".format(counter, fileName))
