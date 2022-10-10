@@ -13,4 +13,4 @@ def hello_world():
 @app.route('/test')
 def test():
 	print("Test Welcome Jiten!!!")
-    return "Test Ok Jiten"
+    return "Test"
