@@ -84,6 +84,8 @@ services:
 
   terriamasterjson:
     container_name: terriacataloguejson
-    image: ubuntu:focal-20210119
+    build:
+      context: ../../
+      dockerfile: contrib/docker/terria_master_json/Dockerfile
     volumes:
       - ckan_home:/usr/lib/ckan
