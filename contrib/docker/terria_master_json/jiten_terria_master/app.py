@@ -9,8 +9,3 @@ def terriamasterjson():
 @app.route('/hello')
 def hello_world():
    return "hello world"
-
-@app.route('/test')
-def test():
-	print("Test Welcome Jiten!!!")
-    return "Test"
