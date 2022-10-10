@@ -8,3 +8,9 @@ def index():
 @app.route('/hello')
 def hello():
    return "hello world"
+
+@app.route('/test')
+def test():
+	print("test Welcome!!!")
+	
+   return "hello world"
