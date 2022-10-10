@@ -186,4 +186,4 @@ def masterjson():
     fle.touch(exist_ok=True)
     with open(fle, 'w+') as fp:
         json.dump(catalogJson, fp)
-    return "Master File created successfully"
+    return "{}".format(catalogJson)
