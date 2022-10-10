@@ -28,7 +28,7 @@ def getNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, focusA
     f = open('{}/allCatalogueJson/{}'.format(cpath, fileName))
     # cpath = '/usr/lib/ckan/terria_catalog/'
     # f = open('{}/allCatalogueJson/{}'.format(cpath,fileName))
-
+    #return "file path name:{}".format(f)
     data = json.load(f)
     # catalogue data
     i = data['catalog'][0]
@@ -114,6 +114,8 @@ def masterjson():
     for index, (key, value) in enumerate(regionIDColumns.items()):
         regionIDIndex.append(value)
     focusArr = []
+    #return "master Json"
+
     for index, (key, value) in enumerate(regionIDColumns.items()):
         granularityArr = []
 
@@ -143,18 +145,18 @@ def masterjson():
                      "isOpen": False, 'members': granularityArr}
             focusArr.append(dict(focus))
             # by default it consider current directory
+    #return "master Json111"
     cpath = Path.cwd()
     path = "{}/allCatalogueJson".format(cpath)
     counter = 1
     for fileName in os.listdir(path):
         # print("{} -- Reading Files:{}".format(counter, fileName))
-        focusArr = getNewJsonData(
-            fileName, groupIndex, granularityIndex, regionIDIndex, focusArr)
+        focusArr = getNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, focusArr)
         counter = counter + 1
 
     groupInfo = {"name": "Focus", "type": "group",
                  "description": "Focus description", "isOpen": False, "members": focusArr}
-
+    #return "master Json222 members:{}".format(focusArr)
     basemapInfo = {
         "items": [
             {
@@ -163,7 +165,7 @@ def masterjson():
                     "name": "Voyager with labels",
                     "type": "open-street-map",
                     "url": "https://basemaps.cartocdn.com/rastertiles/voyager_labels_under/",
-                    "attribution": "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
+                    "attribiution": "© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>, © <a href='https://carto.com/about-carto/'>CARTO</a>",
                     "subdomains": ["a", "b", "c", "d"],
                     "opacity": 1.0
                 },
@@ -184,4 +186,4 @@ def masterjson():
     fle.touch(exist_ok=True)
     with open(fle, 'w+') as fp:
         json.dump(catalogJson, fp)
-    return fle
+    return "Master File created successfully"
