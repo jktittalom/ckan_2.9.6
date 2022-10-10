@@ -85,6 +85,6 @@ services:
   terriamasterjson:
     container_name: terriacataloguejson
     build:
-      context: ./terria_master_json/jiten_terria_master
+      context: ./terria_master_json/
     volumes:
       - ckan_home:/usr/lib/ckan
