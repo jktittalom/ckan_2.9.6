@@ -1,12 +1,11 @@
 FROM python:3.8-slim-buster
 
-WORKDIR /jiten_terria_master
+COPY ./requirements.txt  /jiten_terria_master/requirements.txt
 
-COPY jiten_terria_master/requirements.txt requirements.txt
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /jiten_terria_master/requirements.txt
 
-COPY . .
+COPY . /jiten_terria_master /
 
+WORKDIR /jiten_terria_master/
 
 #CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
-CMD [ "ll" ]
