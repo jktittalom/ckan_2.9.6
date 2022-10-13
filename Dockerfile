@@ -73,6 +73,7 @@ RUN ckan-pip3 install -U pip && \
 ENTRYPOINT ["/ckan-entrypoint.sh"]
 
 USER ckan
-EXPOSE 5000
+## Disabled this as we are going to use Nginx, it will handle this
+# EXPOSE 5000
 
 CMD ["ckan","-c","/etc/ckan/production.ini", "run", "--host", "0.0.0.0"]
