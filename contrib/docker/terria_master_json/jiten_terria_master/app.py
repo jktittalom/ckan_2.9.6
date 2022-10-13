@@ -321,8 +321,9 @@ def terriamasterjson():
     counter = 1
     for fileName in os.listdir(path):
         # print("{} -- Reading Files:{}".format(counter, fileName))
-        focusArr = getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, focusArr)
-        counter = counter + 1
+        if not fileName == 'ckanMasterTerriaCatalogue.json':
+            focusArr = getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, focusArr)
+            counter = counter + 1
 
     groupInfo = {"name": "Focus", "type": "group",
                  "description": "Focus description", "isOpen": False, "members": focusArr}
