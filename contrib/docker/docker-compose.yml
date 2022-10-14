@@ -110,3 +110,14 @@ services:
     volumes:
       - ckan_home:/usr/lib/ckan
     restart: unless-stopped
+
+  terria:
+    container_name: terria
+    
+    build:
+      context: TerriaMap/
+      dockerfile: Dockerfile
+      
+    volumes:
+      - ckan_home:/usr/lib/ckan
+    restart: unless-stopped
