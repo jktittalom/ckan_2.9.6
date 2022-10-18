@@ -90,7 +90,15 @@ def makeCatalogue(id):
 
         # live directory path: /usr/lib/ckan/default/src/ckan/terria_catalog
 
-        temp_fle = Path('terria_catalog/{}_{}_{}_{}.json'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], pkg_dict["groups"][0]["display_name"], pkg_dict["name"]))
+        #temp_fle = Path('terria_catalog/{}_{}_{}_{}.json'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], pkg_dict["groups"][0]["display_name"], pkg_dict["name"]))
+
+        # this is for Docker else use Path.cwd()
+        if not Path('{}/terria_catalog'.format(Path.home())).exists():
+            Path('{}/terria_catalog'.format(Path.home())).mkdir(parents=True, exist_ok=True)
+
+
+        temp_fle = Path('{}/terria_catalog/{}_{}_{}_{}.json'.format(Path.home(), regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], pkg_dict["groups"][0]["display_name"], pkg_dict["name"]))
+
 
         fle = Path(temp_fle)
         fle.touch(exist_ok=True)
@@ -107,8 +115,13 @@ def makeCatalogue(id):
             #e.g: http://localhost:5000/datastore/dump/d332b1f4-edf4-4d9e-8ed1-ca57be906e21
             resourceInfo['url'] = resource['url'] 
             resourceInfo['opacity'] = 0.8
+            
+            # No Need to add FL_ for ALL florida dataset, 18 Oct 2022 by Joe
+            if pkg_dict["geography_code"][0] == "All Florida":
+                regionColumn = '{}_{}'.format(granulatiryColumns[pkg_dict["granulatiry_code"][0]], resource["census_geo_year_code"])
+            else:
+                regionColumn = '{}_{}_{}'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], resource["census_geo_year_code"])
 
-            regionColumn = '{}_{}_{}'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], resource["census_geo_year_code"])
 
             colorPalette = colorColumns[pkg_dict["groups"][0]["display_name"]]
             
