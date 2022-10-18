@@ -108,7 +108,7 @@ focusArr = []
 for index, (key, value) in enumerate(regionIDColumns.items()):
 	
 	granularityArr = []
-	if value == 'FL_CD' or value == 'FL_h' or value == 'FL_Senate' or value == 'FL_C': 
+	if value == 'FL_CD' or value == 'FL_H' or value == 'FL_Senate' or value == 'FL_C': 
 		themeArr = []
 		for index1, (key1, value1) in enumerate(colorColumns.items()):
 			theme = {"name": key1, "type": "group", "description": "", "isOpen": False}
