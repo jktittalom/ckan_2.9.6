@@ -1,9 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  //bucket-list
-//masterCatalogue1, masterCatalogue2
-
-  "initializationUrls": ["simpleMVT"],
+  "initializationUrls": ["simple"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
@@ -14,18 +11,9 @@
 
     /* Text that appears at the bottom of the map */
     "disclaimer": {
-      "text": "TAD3 - informing the community & community informed. Data is harvested from sources cited in the metadata for each dataset and resource.",
-      "url": "https://www.tad3.org"
+      "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
+      "url": ""
     },
-
-    "printDisclaimer":{
-            "text":"TAD3 - informing the community & community informed. Data is harvested from sources cited in the metadata for each dataset and resource.",
-            "url": "https://www.tad3.org"
-        },
-
-    // Joe: To override TerriaJS's region mapping file with a local one.
-    "regionMappingDefinitionsUrl": "data/regionMapping.json",
-
     /*
         // Text that will be added to any pages printed from your site.
         printDisclaimer:{
@@ -53,22 +41,14 @@
             link: "http://www.example.com"
         },*/
     // This is used in various text messages. You should also set <title> in index.html
-    //"appName": "Terria Map",
-    "appName": "TAD3",
+    "appName": "Terria Map",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
-    /*"brandBarElements": [
+    "brandBarElements": [
       "",
       "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
       ""
-    ],*/
-
-    "brandBarElements": [
-            "",
-            "<a target=\"_blank\" href=\"https://tad3.org\"><img src=\"images/branding.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
-            ""
-        ],
-
+    ],
     // Shown when things go wrong.
     "supportEmail": "help@example.com",
     // You probably shouldn't change this.
@@ -94,7 +74,7 @@
 
     // True to display in-app guides.
     // "showInAppGuides": false,
-    "bingMapsKey": "ArnBjOx0eWpKst1bCDWpK8z7cJYZ9moqeLuYjLg6wmLixJ61WIv8GpleBCKcTiLQ",
+
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
       "enabled": false,
