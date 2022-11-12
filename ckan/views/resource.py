@@ -115,12 +115,15 @@ def makeCatalogue(id):
             #e.g: http://localhost:5000/datastore/dump/d332b1f4-edf4-4d9e-8ed1-ca57be906e21
             resourceInfo['url'] = resource['url'] 
             resourceInfo['opacity'] = 0.8
+
+            yrcode = resource["census_geo_year_code"]
+            yrcode = yrcode[-2:]
             
             # No Need to add FL_ for ALL florida dataset, 18 Oct 2022 by Joe
             if pkg_dict["geography_code"][0] == "All Florida":
-                regionColumn = '{}_{}'.format(granulatiryColumns[pkg_dict["granulatiry_code"][0]], resource["census_geo_year_code"])
+                regionColumn = '{}_{}'.format(granulatiryColumns[pkg_dict["granulatiry_code"][0]], yrcode)
             else:
-                regionColumn = '{}_{}_{}'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], resource["census_geo_year_code"])
+                regionColumn = '{}_{}_{}'.format(regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], yrcode)
 
 
             colorPalette = colorColumns[pkg_dict["groups"][0]["display_name"]]
