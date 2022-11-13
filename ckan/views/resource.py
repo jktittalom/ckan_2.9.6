@@ -49,6 +49,29 @@ prefixed_resource = Blueprint(
     url_defaults={u'package_type': u'dataset'}
 )
 
+def getCatalogueFilename(id):
+    context = {
+            u'model': model,
+            u'session': model.Session,
+            u'user': g.user,
+            u'auth_user_obj': g.userobj
+        }
+    pkg_dict = get_action(u'package_show')(context, {u'id': id})
+    package_type = pkg_dict[u'type'] or package_type
+
+    if len(pkg_dict["groups"]) > 0:
+        #Geography
+        regionIDColumns = {"DeSoto" : "DES", "Hillsborough":"HIL", "Manatee":"MAN", "Pinellas":"PIN", "Sarasota":"SAR", "All Florida":"FL"}
+        
+        #Granulatiry
+        #layerColumns = {"Blocks":"BLOCK", "Block Groups":"BLKGRP", "Tracts":"TRACT", "ZCTA":"ZCTA", "Places":"PLACE"}
+
+        granulatiryColumns = {"Blocks":"B", "Block Groups":"BG", "Tracts":"T", "ZCTA":"ZIP", "Places":"P", "Florida Congressional Districts":"FL_CD","Florida House Districts":"FL_H", "Florida Senate Districts":"FL_Senate","Florida Counties":"FL_C"}
+
+        temp_fle = Path('{}/terria_catalog/{}_{}_{}_{}.json'.format(Path.home(), regionIDColumns[pkg_dict["geography_code"][0]], granulatiryColumns[pkg_dict["granulatiry_code"][0]], pkg_dict["groups"][0]["display_name"], pkg_dict["name"]))
+        return temp_fle
+
+
 def makeCatalogue(id):
     # To get 1 table 1 row, here its getting all data of 1 package(dataset) data
 
@@ -579,6 +602,9 @@ class DeleteView(MethodView):
             u'user': g.user,
             u'auth_user_obj': g.userobj
         }
+        filename = getCatalogueFilename(id)
+        log.info("Jiten:: deleting File {}".format(filename))
+        
         try:
             check_access(u'package_delete', context, {u'id': id})
         except NotAuthorized:
