@@ -1,9 +1,9 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   //bucket-list
-//masterCatalogue1, masterCatalogue2
+//masterCatalogue1, masterCatalogue2, simpleMVT
 
-  "initializationUrls": ["simpleMVT"],
+  "initializationUrls": ["workingMVT"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,

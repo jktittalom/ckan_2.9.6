@@ -602,9 +602,10 @@ class DeleteView(MethodView):
             u'user': g.user,
             u'auth_user_obj': g.userobj
         }
+        
         filename = getCatalogueFilename(id)
         log.info("Jiten:: deleting File {}".format(filename))
-        
+
         try:
             check_access(u'package_delete', context, {u'id': id})
         except NotAuthorized:
@@ -626,6 +627,21 @@ class DeleteView(MethodView):
             get_action(u'resource_delete')(context, {u'id': resource_id})
             h.flash_notice(_(u'Resource has been deleted.'))
             pkg_dict = get_action(u'package_show')(None, {u'id': id})
+
+            #By Jiten to removing existing csv file
+            filename = getCatalogueFilename(id)
+
+            dirPath = "{}/terria_catalog/".format(Path.home())
+            log.info("Jiten dir path:".format(dirPath))
+            for file in os.listdir(dirPath):
+                matchFile = dirPath+file
+                if file==filename:
+                    log.info("Jiten file found:")
+                    os.remove(matchFile)
+                    log.info("Jiten file removed")
+                    break
+
+
             if pkg_dict[u'state'].startswith(u'draft'):
                 return h.redirect_to(
                     u'{}_resource.new'.format(package_type),
@@ -634,7 +650,7 @@ class DeleteView(MethodView):
             else:
                 return h.redirect_to(u'{}.read'.format(package_type), id=id)
 
-            makeCatalogue(id) ## Jiten creating Catalogue
+            #makeCatalogue(id) ## Jiten creating Catalogue
 
         except NotAuthorized:
             return base.abort(
