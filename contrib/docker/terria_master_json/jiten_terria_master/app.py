@@ -343,4 +343,18 @@ def terriamasterjson():
     fle.touch(exist_ok=True)
     with open(fle, 'w+') as fp:
         json.dump(catalogJson, fp)
+
+    # Replcing Python Boolean value False to small false for Terria..
+    filename = cpath+'/ckanMasterTerriaCatalogue.json'
+    search_text = " False"
+    replace_text = " false"
+
+
+    with open(r'{}'.format(filename), 'r') as file:
+        data = file.read()
+        data = data.replace(search_text, replace_text)
+
+    with open(r'{}'.format(filename), 'w') as file:
+        file.write(data)
+
     return "{}".format(catalogJson)
