@@ -357,4 +357,6 @@ def terriamasterjson():
     with open(r'{}'.format(filename), 'w') as file:
         file.write(data)
 
-    return "{}".format(catalogJson)
+
+
+    return "{}".format(data)
