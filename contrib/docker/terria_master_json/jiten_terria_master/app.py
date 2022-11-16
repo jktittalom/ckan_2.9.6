@@ -285,7 +285,7 @@ def terriamasterjson():
     focusArr = []
     #return "master Json"
     
-    smallFalse = 'false'
+    smallFalse = False
 
     for index, (key, value) in enumerate(regionIDColumns.items()):
         granularityArr = []
