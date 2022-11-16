@@ -194,7 +194,7 @@ def getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, 
 
     #cpath = Path.cwd()
     #f = open('{}/allCatalogueJson/{}'.format(cpath, fileName))
-    smallFalse = 'false'
+
 #CKAN Volume PATH
     cpath = '/usr/lib/ckan/terria_catalog'
     f = open('{}/{}'.format(cpath,fileName))
@@ -217,7 +217,7 @@ def getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, 
             # print("-- key exist if --")
             catalogContent = ''
             catalogContent = {"name": i["members"][0]["name"], "type": "group",
-                              "description": "", "isOpen": smallFalse, "members": allResource}
+                              "description": "", "isOpen": False, "members": allResource}
             focusArr[regIndex]['members'][groIndex]['members'].append(
                 catalogContent)
 
@@ -225,7 +225,7 @@ def getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, 
             # print("----  key not exist  in else--- ")
             catalogContent = []
             catalogContent.append({"name": i["members"][0]["name"], "type": "group",
-                                  "description": "", "isOpen": smallFalse, "members": allResource})
+                                  "description": "", "isOpen": False, "members": allResource})
             focusArr[regIndex]['members'][groIndex]['members'] = catalogContent
 
     else:
@@ -242,7 +242,7 @@ def getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, 
             # print("-- in If ---")
             catalogContent = ''
             catalogContent = {"name": i["members"][0]["name"], "type": "group",
-                              "description": "", "isOpen": smallFalse, "members": allResource}
+                              "description": "", "isOpen": False, "members": allResource}
             focusArr[regIndex]['members'][graIndex]['members'][groIndex]['members'].append(
                 catalogContent)
         else:
@@ -252,7 +252,7 @@ def getTerriaNewJsonData(fileName, groupIndex, granularityIndex, regionIDIndex, 
 
             catalogContent = []
             catalogContent.append({"name": i["members"][0]["name"], "type": "group",
-                                  "description": "", "isOpen": smallFalse, "members": allResource})
+                                  "description": "", "isOpen": False, "members": allResource})
             focusArr[regIndex]['members'][graIndex]['members'][groIndex]['members'] = list(
                 catalogContent)
 
@@ -284,8 +284,6 @@ def terriamasterjson():
         regionIDIndex.append(value)
     focusArr = []
     #return "master Json"
-    
-    smallFalse = False
 
     for index, (key, value) in enumerate(regionIDColumns.items()):
         granularityArr = []
@@ -294,10 +292,10 @@ def terriamasterjson():
             themeArr = []
             for index1, (key1, value1) in enumerate(colorColumns.items()):
                 theme = {"name": key1, "type": "group",
-                         "description": "", "isOpen": smallFalse}
+                         "description": "", "isOpen": False}
                 themeArr.append(dict(theme))
             focus = {"name": key, "type": "group", "description": "",
-                     "isOpen": smallFalse, 'members': themeArr}
+                     "isOpen": False, 'members': themeArr}
             focusArr.append(dict(focus))
         else:
 
@@ -305,15 +303,15 @@ def terriamasterjson():
                 themeArr = []
                 for index1, (key1, value1) in enumerate(colorColumns.items()):
                     theme = {"name": key1, "type": "group",
-                             "description": "", "isOpen": smallFalse}
+                             "description": "", "isOpen": False}
                     themeArr.append(dict(theme))
 
                 granularity = {"name": key2, "type": "group",
-                               "description": "", "isOpen": smallFalse, "members": themeArr}
+                               "description": "", "isOpen": False, "members": themeArr}
                 granularityArr.append(dict(granularity))
 
             focus = {"name": key, "type": "group", "description": "",
-                     "isOpen": smallFalse, 'members': granularityArr}
+                     "isOpen": False, 'members': granularityArr}
             focusArr.append(dict(focus))
             # by default it consider current directory
     #return "master Json111"
@@ -328,7 +326,7 @@ def terriamasterjson():
             counter = counter + 1
 
     groupInfo = {"name": "Focus", "type": "group",
-                 "description": "Focus description", "isOpen": smallFalse, "members": focusArr}
+                 "description": "Focus description", "isOpen": False, "members": focusArr}
     #return "master Json222 members:{}".format(focusArr)
     basemapInfo = {
         "defaultBaseMapId": "basemap-positron",
