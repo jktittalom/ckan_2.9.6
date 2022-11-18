@@ -3,7 +3,10 @@
   //bucket-list
 //masterCatalogue1, masterCatalogue2, simpleMVT
 
-  "initializationUrls": ["workingMVT"],
+
+// /usr/lib/ckan/terria_catalog/ckanMasterTerriaCatalogue.json
+
+  "initializationUrls": ["ckanMasterTerriaCatalogue"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
