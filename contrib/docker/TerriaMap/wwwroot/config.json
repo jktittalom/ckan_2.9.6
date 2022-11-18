@@ -6,7 +6,7 @@
 
 // /usr/lib/ckan/terria_catalog/ckanMasterTerriaCatalogue.json
 
-  "initializationUrls": ["ckanMasterTerriaCatalogue"],
+  "initializationUrls": ["masterCatalogue2"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
