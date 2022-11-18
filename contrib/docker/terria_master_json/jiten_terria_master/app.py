@@ -349,10 +349,15 @@ def terriamasterjson():
     search_text = " False"
     replace_text = " false"
 
+    search_text1 = "FL_Senate_20"
+    replace_text1 = "FL_S_20"
+
+
 
     with open(r'{}'.format(filename), 'r') as file:
         data = file.read()
         data = data.replace(search_text, replace_text)
+        data = data.replace(search_text1, replace_text1)
 
     with open(r'{}'.format(filename), 'w') as file:
         file.write(data)
