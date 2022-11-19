@@ -1,0 +1,395 @@
+{
+"regionWmsMap": {  
+        "FL_CONDIST_2020": {
+            "layerName": "FL_CONDIST_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_CONDIST_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 1,
+            "serverMaxZoom": 10,
+            "serverMaxNativeZoom": 10,
+            "regionIdsFile": "data/regionids/region_map-FL_CONDIST_2020.json",
+            "regionProp": "FL_CD_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "FL_CONGRESS_2020",
+                "FL_CD_20"
+            ],
+            "bbox": [-87.6348959282059781, 24.5210316754366957, -80.0313186453441432, 31.0001954218924993]
+        },
+        "FL_COUNTIES_2020": {
+            "layerName": "FL_COUNTIES_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_COUNTIES_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 1,
+            "serverMaxZoom": 14,
+            "serverMaxNativeZoom": 14,
+            "regionIdsFile": "data/regionids/region_map-FL_COUNTIES_2020.json",
+            "regionProp": "FL_C_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "FL_COUNTIES_2020",
+                "FL_C_20"
+            ],
+            "bbox": [-87.63476657, 24.52113915, -80.03118343, 31.00089602]
+        },
+        "FL_HOUSE_2020": {
+            "layerName": "FL_HOUSE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_HOUSE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 1,
+            "serverMaxZoom": 10,
+            "serverMaxNativeZoom": 10,
+            "regionIdsFile": "data/regionids/region_map-FL_HOUSE_2020.json",
+            "regionProp": "FL_H_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "FL_HOUSE_20",
+                "FL_H_20"
+            ],
+            "bbox": [-87.6348959282059781, 24.5210316754366957, -80.0313186453441432, 31.0001954218924993]
+        },
+        "FL_SENATE_2020": {
+            "layerName": "FL_SENATE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_SENATE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 1,
+            "serverMaxZoom": 10,
+            "serverMaxNativeZoom": 10,
+            "regionIdsFile": "data/regionids/region_map-FL_SENATE_2020.json",
+            "regionProp": "FL_S_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "FL_SENATE_2020",
+                "FL_S_20"
+            ],
+            "bbox": [-87.6348959282059781, 24.5210316754366957, -80.0313186453441432, 31.0001954218924993]
+        },
+
+        "DES_BLKGRP_2020": {
+            "layerName": "DES_BLKGRP_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_BLKGRP_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-DES_BLKGRP_2020.json",
+            "regionProp": "DES_BG_20",
+            "nameProp": "DES_BG_20",
+            "aliases": [
+                "DES_BLKGRP_2020",
+                "DES_BG_20"
+            ],
+            "bbox": [-82.05763100, 27.03170000, -81.56230600, 27.34070200]
+        },
+        "DES_TRACT_2020": {
+            "layerName": "DES_TRACT_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_TRACT_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-DES_TRACT_2020.json",
+            "regionProp": "DES_T_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "DES_TRACT_2020",
+                "DES_T_20"
+            ],
+            "bbox": [-82.05763100, 27.03170000, -81.56230600, 27.34070200]
+        },
+
+        "DES_ZCTA_2020": { 
+                "layerName": "DES_ZCTA_2020",
+                "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_ZCTA_2020/{z}/{x}/{y}.pbf",
+                "serverType": "MVT",
+                "serverMinZoom": 0, 
+                "serverMaxZoom": 11,
+                "serverMaxNativeZoom": 9,
+                "regionIdsFile": "data/regionids/region_map-DES_ZCTA_2020.json",
+                "regionProp": "DES_ZIP_20",
+                "nameProp": "ZCTA",
+                "aliases": [
+                    "DES_ZCTA_2020",
+                    "DES_ZIP_20",
+                    "ZCTA"
+                ],
+                "description": "DES ZIP CODES",
+                "bbox": [-82.18037800, 27.03134400, -81.56230600, 27.59524600]
+            },
+        "DES_PLACE_2020": {
+            "layerName": "DES_PLACE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_PLACE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-DES_PLACE_2020.json",
+            "regionProp": "DES_P_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "DES_PLACE_2020",
+                "DES_P_20"
+            ],
+            "bbox": [-81.88217800, 27.16288700, -81.82780700, 27.24564000]
+        },
+   
+        "HIL_BLKGRP_2020": {
+            "layerName": "HIL_BLKGRP_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_BLKGRP_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 13,
+            "serverMaxNativeZoom": 13,
+            "regionIdsFile": "data/regionids/region_map-HIL_BLKGRP_2020.json",
+            "regionProp": "HIL_BG_20",
+            "nameProp": "HIL_BG_20",
+            "aliases": [
+                "HIL_BLKGRP_2020",
+                "HIL_BG_20"
+            ],
+            "bbox": [-82.76460216, 27.57613062, -82.05401200, 28.17337900]
+        },
+        "HIL_TRACT_2020": {
+            "layerName": "HIL_TRACT_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_TRACT_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 13,
+            "serverMaxNativeZoom": 13,
+            "regionIdsFile": "data/regionids/region_map-HIL_TRACT_2020.json",
+            "regionProp": "HIL_T_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "HIL_TRACT_2020",
+                "HIL_T_20"
+            ],
+            "bbox": [-82.76460216, 27.57613062, -82.05401200, 28.17337900]
+        },  
+        "HIL_ZCTA_2020": {
+            "layerName": "HIL_ZCTA_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_ZCTA_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 11,
+            "serverMaxNativeZoom": 11,
+            "regionIdsFile": "data/regionids/region_map-HIL_ZCTA_2020.json",
+            "regionProp": "HIL_ZIP_20",
+            "nameProp": "ZCTA",
+            "aliases": [
+                "HIL_ZCTA_2020",
+                "HIL_ZIP_20"
+            ],
+            "bbox": [-82.65116500, 27.61837500, -81.88323100, 28.29381300]
+        },
+        "HIL_PLACE_2020": {
+            "layerName": "HIL_PLACE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_PLACE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 11,
+            "serverMaxNativeZoom": 11,
+            "regionIdsFile": "data/regionids/region_map-HIL_PLACE_2020.json",
+            "regionProp": "HIL_P_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "HIL_PLACE_2020",
+                "HIL_P_20"
+            ],
+            "bbox": [-82.65116500, 27.64649200, -82.05551100, 28.17337900]
+        },
+      
+        "MAN_BLKGRP_2020": {
+            "layerName": "MAN_BLKGRP_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_BLKGRP_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 13,
+            "serverMaxNativeZoom": 13,
+            "regionIdsFile": "data/regionids/region_map-MAN_BLKGRP_2020.json",
+            "regionProp": "MAN_BG_20",
+            "nameProp": "MAN_BG_20",
+            "aliases": [
+                "MAN_BLKGRP_2020",
+                "MAN_BG_20"
+            ],
+            "bbox": [-82.74658228, 27.20776900, -82.05434900, 27.64668000]
+        },
+        "MAN_TRACT_2020": {
+            "layerName": "MAN_TRACT_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_TRACT_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 10,
+            "serverMaxNativeZoom": 9,
+            "regionIdsFile": "data/regionids/region_map-MAN_TRACT_2020.json",
+            "regionProp": "MAN_T_20",
+            "aliases": [
+                "MAN_T_20",
+                "MAN_TRACT_2020"
+            ],
+            "bbox": [-82.74658228, 27.20776900, -82.05434900, 27.64668000]
+        },  
+        "MAN_ZCTA_2020": {
+            "layerName": "MAN_ZCTA_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_ZCTA_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 11,
+            "serverMaxNativeZoom": 11,
+            "regionIdsFile": "data/regionids/region_map-MAN_ZCTA_2020.json",
+            "regionProp": "MAN_ZIP_20",
+            "nameProp": "ZCTA",
+            "aliases": [
+                "MAN_ZCTA_2020",
+                "MAN_ZIP_20"
+            ],
+            "bbox": [-82.65116500, 27.61837500, -81.88323100, 28.29381300]
+        },
+        "MAN_PLACE_2020": {
+            "layerName": "MAN_PLACE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_PLACE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-MAN_PLACE_2020.json",
+            "regionProp": "MAN_P_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "MAN_PLACE_2020",
+                "MAN_P_20"
+            ],
+            "bbox": [-82.74610000, 27.32835383, -82.35060700, 27.56765126]
+        },
+       
+        "PIN_BLKGRP_2020": {
+            "layerName": "PIN_BLKGRP_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_BLKGRP_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 14,
+            "serverMaxNativeZoom": 14,
+            "regionIdsFile": "data/regionids/region_map-PIN_BLKGRP_2020.json",
+            "regionProp": "PIN_BG_20",
+            "nameProp": "PIN_BG_20",
+            "aliases": [
+                "PIN_BLKGRP_2020",
+                "PIN_BG_20"
+            ],
+            "bbox": [-82.85185039, 27.61153568, -82.58240987, 28.17334600]
+        },
+        "PIN_TRACT_2020": {
+            "layerName": "PIN_TRACT_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_TRACT_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 14,
+            "serverMaxNativeZoom": 14,
+            "regionIdsFile": "data/regionids/region_map-PIN_TRACT_2020.json",
+            "regionProp": "PIN_T_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "PIN_TRACT_2020",
+                "PIN_T_20"
+            ],
+            "bbox": [-82.908909, 27.610273, -82.540618, 28.173349]
+        },  
+        "PIN_ZCTA_2020": {
+            "layerName": "PIN_ZCTA_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_ZCTA_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 1,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-PIN_ZCTA_2020.json",
+            "regionProp": "PIN_ZIP_20",
+            "nameProp": "ZCTA",
+            "aliases": [
+                "PIN_ZIP_20"
+            ],
+            "bbox": [-82.908909, 27.610273, -82.540618, 28.173349   ]
+
+        },
+        "PIN_PLACE_2020": {
+            "layerName": "PIN_PLACE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_PLACE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-PIN_PLACE_2020.json",
+            "regionProp": "PIN_P_20",
+            "nameProp": "PIN_P_20",
+            "aliases": [
+                "PIN_PLACE_2020",
+                "PIN_P_20"
+            ],
+            "bbox": [-82.85185039, 27.64663600, -82.58760212, 28.17334600]
+        },
+     
+        "SAR_BLKGRP_2020": {
+            "layerName": "SAR_BLKGRP_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_BLKGRP_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 13,
+            "serverMaxNativeZoom": 13,
+            "regionIdsFile": "data/regionids/region_map-SAR_BLKGRP_2020.json",
+            "regionProp": "SAR_BG_20",
+            "nameProp": "SAR_BG_20",
+            "aliases": [
+                "SAR_BLKGRP_2020",
+                "SAR_BG_20"
+            ],
+            "bbox": [-82.64288389, 26.94525500, -82.05649700, 27.38973900]
+        },
+        "SAR_TRACT_2020": {
+            "layerName": "SAR_TRACT_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_TRACT_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 12,
+            "serverMaxNativeZoom": 12,
+            "regionIdsFile": "data/regionids/region_map-SAR_TRACT_2020.json",
+            "regionProp": "SAR_T_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "SAR_TRACT_2020",
+                "SAR_T_20"
+            ],
+            "bbox": [-82.64288389, 26.94525500, -82.05649700, 27.38973900]
+        },  
+        "SAR_ZCTA_2020": {
+            "layerName": "SAR_ZCTA_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_ZCTA_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 11,
+            "serverMaxNativeZoom": 11,
+            "regionIdsFile": "data/regionids/region_map-SAR_ZCTA_2020.json",
+            "regionProp": "SAR_ZIP_20",
+            "nameProp": "ZCTA",
+            "aliases": [
+                "SAR_ZCTA_2020",
+                "SAR_ZIP_20"
+            ],
+            "bbox": [-82.58873032, 26.86756800, -81.56230600, 27.42934400]
+        },
+        "SAR_PLACE_2020": {
+            "layerName": "SAR_PLACE_2020",
+            "server": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_PLACE_2020/{z}/{x}/{y}.pbf",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxZoom": 11,
+            "serverMaxNativeZoom": 11,
+            "regionIdsFile": "data/regionids/region_map-SAR_PLACE_2020.json",
+            "regionProp": "SAR_P_20",
+            "nameProp": "NAME",
+            "aliases": [
+                "SAR_PLACE_2020",
+                "SAR_P_20"
+            ],
+            "bbox": [-82.69068120, 26.92145151, -82.05738000, 27.48793000]
+        }
+    }
+}

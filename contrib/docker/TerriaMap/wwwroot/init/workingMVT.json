@@ -1,0 +1,608 @@
+  {
+    "homeCamera": {
+      "north": 31.0,
+      "east": -80.0,
+      "south": 24.5,
+      "west": -87.6
+    
+    },
+    "catalog": [
+        {"name": "Housing", "type": "group", "description": "", "isOpen": false, "members": [{"name": "HOUSING TENURE-DP04_FL_S_20", "type": "group", "description": "", "isOpen": false, "members": [{"id": "gggg", "name": "HOUSING TENURE-DP04_FL_S_20.csv", "type": "csv", "url": "http://ec2-18-221-182-207.us-east-2.compute.amazonaws.com/dataset/120052b5-813c-455b-8b00-856e9fba15d4/resource/59f756c2-79d7-493a-9341-15f77525173b/download/housing-tenure-dp04_fl_s_20.csv", "opacity": 0.8, "defaultStyle": {"regionColumn": "FL_Senate_20", "color": {"numberOfBins": 5, "colorPalette": "PuBuGn"}}}]}, 
+
+        {"name": "GRANDPARENTS-DP02_FL_S_20", 
+          "type": "group", 
+          "description": "", 
+          "isOpen": false, 
+          "members": [
+            {"id": "777", "name": "GRANDPARENTS-DP02_FL_S_20.csv", "type": "csv", "url": "http://ec2-18-221-182-207.us-east-2.compute.amazonaws.com/dataset/41cd1947-357b-4a2a-86cc-7ec2a169ff3c/resource/fffa2e4b-f663-4d6a-940b-18dbe09db7bc/download/grandparents-dp02_fl_s_20.csv", "opacity": 0.8, "defaultStyle": {"regionColumn": "FL_Senate_20", "color": {"numberOfBins": 5, "colorPalette": "PuBuGn"}}}]
+        }
+
+      ]},
+      {
+        "id": "51",
+        "name": "MORTGAGE STATUS-DP04_PIN_P_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/MORTGAGE STATUS-DP04_PIN_P_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "PIN_P_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "52",
+        "name": "MORTGAGE STATUS-DP04_PIN_ZIP_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/MORTGAGE STATUS-DP04_PIN_ZIP_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "PIN_ZIP_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "53",
+        "name": "MORTGAGE STATUS-DP04_PIN_T_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/MORTGAGE STATUS-DP04_PIN_T_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "PIN_T_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "55",
+        "name": "GRANDPARENTS-DP02_FL_C_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/GRANDPARENTS-DP02_FL_C_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "FL_C_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "56",
+        "name": "GRANDPARENTS-DP02_FL_CD_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/GRANDPARENTS-DP02_FL_CD_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "FL_CD_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "57",
+        "name": "GRANDPARENTS-DP02_FL_S_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/GRANDPARENTS-DP02_FL_S_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "FL_S_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "888", 
+        "name": "GRANDPARENTS-DP02_FL_S_20.csv", 
+        "type": "csv", 
+        "url": "http://ec2-18-221-182-207.us-east-2.compute.amazonaws.com/dataset/41cd1947-357b-4a2a-86cc-7ec2a169ff3c/resource/fffa2e4b-f663-4d6a-940b-18dbe09db7bc/download/grandparents-dp02_fl_s_20.csv", 
+        "description": "",
+        "opacity": 0.8, 
+        "defaultStyle": {
+          "regionColumn": "FL_S_20", 
+          "color": {
+            "numberOfBins": 5, 
+            "colorPalette": "PuBuGn"
+          }
+        }
+      },
+      {
+        "id": "qqqq", 
+        "name": "new HOUSING TENURE-DP04_FL_S_20.csv", 
+        "type": "csv", 
+        "url": "http://ec2-18-221-182-207.us-east-2.compute.amazonaws.com/dataset/120052b5-813c-455b-8b00-856e9fba15d4/resource/59f756c2-79d7-493a-9341-15f77525173b/download/housing-tenure-dp04_fl_s_20.csv", 
+        "opacity": 0.8, 
+        "defaultStyle": {
+            "regionColumn": "FL_Senate_20", 
+            "color": {
+            "numberOfBins": 5,
+             "colorPalette": "PuBuGn"
+           }
+         }
+       },
+      {
+        "id": "EDUCATIONAL ATTAINMENT-DP02_DES_ZIP_20",
+        "name": "EDUCATIONAL ATTAINMENT-DP02_DES_ZIP_20.csv",
+        "type": "csv",
+        "url": "http://ec2-18-221-182-207.us-east-2.compute.amazonaws.com/dataset/85966432-e1b7-4774-a11a-c2ea800c6e29/resource/60d501ee-4b91-4968-9797-711f4f7f1f99/download/educational-attainment-dp02_des_zip_20.csv",
+        //"url": "http://localhost:3001/test/EDUCATIONAL ATTAINMENT-DP02_DES_ZIP_20.csv",
+        "opacity": 0.8,
+        "defaultStyle": {
+          "regionColumn": "DES_ZIP_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "1",
+        "name": "FL_COUNTIES_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_COUNTIES_2020/{z}/{x}/{y}.pbf",
+        //"url": "MapTiles2020/FL_COUNTIES_2020/{z}/{x}/{y}.pbf",
+        "layer": "FL_COUNTIES_2020", 
+        "minimumZoom": 1,
+        "maximumZoom": 14,
+        "fillColor": "orange",
+        "lineColor": "yellow",  
+        "rectangle": {
+          "west": -87.6348959282059781,
+          "south": 24.5210316754366957,
+          "east": -80.0313186453441432,
+          "north": 31.0001954218924993
+        }
+      },
+      /// NEED NEW COUNTY FILES WITH COUNTY NAME
+      {
+        "id": "2",
+        "name": "FL_CONDIST_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_CONDIST_2020/{z}/{x}/{y}.pbf",
+        "layer": "FL_CONDIST_2020", 
+        "minimumZoom": 1,
+        "maximumZoom": 10,
+        "fillColor": "orange",
+        "lineColor": "yellow",  
+        "rectangle": {
+          "west": -87.6348959282059781,
+          "south": 24.5210316754366957,
+          "east": -80.0313186453441432,
+          "north": 31.0001954218924993
+        }
+      },
+      {
+        "id": "3",
+        "name": "FL_HOUSE_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_HOUSE_2020/{z}/{x}/{y}.pbf",
+        "layer": "FL_HOUSE_2020", 
+        "minimumZoom": 1,
+        "maximumZoom": 10,
+        "fillColor": "orange",
+        "lineColor": "yellow",  
+        "rectangle": {
+          "west": -87.6348959282059781,
+          "south": 24.5210316754366957,
+          "east": -80.0313186453441432,
+          "north": 31.0001954218924993
+        }
+      },
+      {
+        "id": "58",
+        "name": "GRANDPARENTS-DP02_FL_H_20",
+        "type": "csv",
+        "url": "http://localhost:3001/test/GRANDPARENTS-DP02_FL_H_20.csv",
+        "description": "",
+        "opacity": 0.8,
+        "ignoreRowsStartingWithComment":true,
+        "defaultStyle": {
+          "regionColumn": "FL_H_20",
+          "color": {
+            "numberOfBins": 5,
+            "colorPalette": "Oranges"
+          }
+        }
+      },
+      {
+        "id": "4",
+        "name": "FL_SENATE_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/FL_SENATE_2020/{z}/{x}/{y}.pbf",
+        "layer": "FL_SENATE_2020", 
+        "minimumZoom": 1,
+        "maximumZoom": 10,
+        "fillColor": "orange",
+        "lineColor": "yellow",  
+        "rectangle": {
+          "west": -87.6348959282059781,
+          "south": 24.5210316754366957,
+          "east": -80.0313186453441432,
+          "north": 31.0001954218924993
+        }
+      },
+      {
+        "id": "5",
+        "name": "DES_ZCTA_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_ZCTA_2020/{z}/{x}/{y}.pbf",
+        "layer": "DES_ZCTA_2020",
+        "minimumZoom": 1,
+        "maximumZoom": 12,
+        "fillColor": "green",
+        "lineColor": "white",   
+        "rectangle": {
+            "west": -82.18037800,
+            "south": 27.03134400,
+            "east": -81.56230600,
+            "north": 27.59524600
+        }
+      },
+      {
+        "id": "6",
+        "name": "DES_TRACT_2020",
+        "type": "mvt",
+        "url": "MapTiles2020/DES_TRACT_2020/{z}/{x}/{y}.pbf",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_TRACT_2020/{z}/{x}/{y}.pbf",
+        "layer": "DES_TRACT_2020",
+        "minimumZoom": 1,
+        "maximumZoom": 12,
+        "fillColor": "green",
+        "lineColor": "white",   
+        "rectangle": {
+            "west": -82.18037800,
+            "south": 27.03134400,
+            "east": -81.56230600,
+            "north": 27.59524600
+        }
+      },
+     /*
+      {
+        "id": "7",
+        "name": "DES_PLACE_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_PLACE_2020/{z}/{x}/{y}.pbf",
+        "layer": "DES_PLACE_2020",
+        "minimumZoom": 1,
+        "maximumZoom": 13,
+        "fillColor": "blue",
+        "lineColor": "yellow",     
+        "rectangle": {
+            "west": -82.18037800,
+            "south": 27.03134400,
+            "east": -81.56230600,
+            "north": 27.59524600
+        }
+      }
+      ///SHOWING ERROR IN TERRIA SAYING SOMETHING ABOUT DEFAULT STYLE
+    */
+      {
+        "id": "8",
+        "name": "DES_BLKGRP_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/DES_BLKGRP_2020/{z}/{x}/{y}.pbf",
+        "layer": "DES_BLKGRP_2020",
+        "minimumZoom": 1,
+        "maximumZoom": 12,
+        "fillColor": "green",
+        "lineColor": "white",   
+        "rectangle": {
+            "west": -82.18037800,
+            "south": 27.03134400,
+            "east": -81.56230600,
+            "north": 27.59524600
+        }
+      },
+      {
+        "id": "9",
+        "name": "PIN_ZCTA_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_ZCTA_2020/{z}/{x}/{y}.pbf",
+        "layer": "PIN_ZCTA_2020",
+        "minimumZoom": 1,
+        "maximumZoom": 12,
+        "fillColor": "green",
+        "lineColor": "white",   
+        "rectangle": {
+            "west": -82.908909,
+            "south": 27.610273,
+            "east":   -82.540618,
+            "north":  28.173349
+        }
+      },
+      {
+        "id": "10",
+        "name": "PIN_TRACT_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_TRACT_2020/{z}/{x}/{y}.pbf",
+        "layer": "PIN_TRACT_2020",
+        "minimumZoom": 0,
+        "maximumZoom": 14,
+        "fillColor": "blue",
+        "lineColor": "white", 
+        "rectangle": {
+          "west": -82.908909,
+          "south": 27.610273,
+          "east":   -82.540618,
+          "north":  28.173349
+        }
+      },
+      {
+        "id": "11",
+        "name": "PIN_PLACE_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_PLACE_2020/{z}/{x}/{y}.pbf",
+        "layer": "PIN_PLACE_2020",
+        "minimumZoom": 0,
+        "maximumZoom": 12,
+        "fillColor": "green",
+        "lineColor": "white", 
+        "rectangle": {
+            "west": -82.85185039,
+            "south": 27.64663600,
+            "east": -82.58760212,
+            "north": 28.17334600
+        }
+      },
+      {
+        "id": "12",
+        "name": "PIN_BLKGRP_2020",
+        "type": "mvt",
+        "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/PIN_BLKGRP_2020/{z}/{x}/{y}.pbf",
+        "layer": "PIN_BLKGRP_2020",
+        "minimumZoom": 0,
+        "maximumZoom": 14,
+        "fillColor": "purple",
+        "lineColor": "white",  
+        "rectangle": {
+            "west": -82.85185039,
+            "south": 27.61153568,
+            "east": -82.58240987,
+            "north": 28.17334600
+        }
+      },
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+{
+  "id": "13",
+  "name": "MAN_ZCTA_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_ZCTA_2020/{z}/{x}/{y}.pbf",
+  "layer": "MAN_ZCTA_2020",
+  "minimumZoom": 1,
+  "maximumZoom": 12,
+  "fillColor": "green",
+  "lineColor": "white",   
+  "rectangle": {
+    "west": -82.823029,
+    "south": 27.207984,
+    "east": -82.054349,
+    "north": 27.64668
+  }
+},
+{
+  "id": "14",
+  "name": "MAN_TRACT_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_TRACT_2020/{z}/{x}/{y}.pbf",
+  "layer": "MAN_TRACT_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "blue",
+  "lineColor": "white", 
+  "rectangle": {
+    "west": -82.823029,
+      "south": 27.207984,
+      "east": -82.054349,
+      "north": 27.64668
+  }
+},
+{
+  "id": "15",
+  "name": "MAN_PLACE_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_PLACE_2020/{z}/{x}/{y}.pbf",
+  "layer": "MAN_PLACE_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 12,
+  "fillColor": "green",
+  "lineColor": "white", 
+  "rectangle": {
+    "west": -82.823029,
+    "south": 27.207984,
+    "east": -82.054349,
+    "north": 27.64668
+  }
+},
+{
+  "id": "16",
+  "name": "MAN_BLKGRP_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/MAN_BLKGRP_2020/{z}/{x}/{y}.pbf",
+  "layer": "MAN_BLKGRP_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "purple",
+  "lineColor": "white",  
+  "rectangle": {
+      "west": -82.823029,
+      "south": 27.207984,
+      "east": -82.054349,
+      "north": 27.64668
+  }
+},
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+{
+  "id": "17",
+  "name": "HIL_ZCTA_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_ZCTA_2020/{z}/{x}/{y}.pbf",
+  "layer": "HIL_ZCTA_2020",
+  "minimumZoom": 1,
+  "maximumZoom": 12,
+  "fillColor": "green",
+  "lineColor": "white",   
+  "rectangle": {
+      "west": -82.823669,
+      "south": 27.57055,
+      "east": -82.054012,
+      "north": 28.173379
+  }
+},
+{
+  "id": "18",
+  "name": "HIL_TRACT_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_TRACT_2020/{z}/{x}/{y}.pbf",
+  "layer": "HIL_TRACT_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "blue",
+  "lineColor": "white", 
+  "rectangle": {
+      "west": -82.823669,
+      "south": 27.57055,
+      "east": -82.054012,
+      "north": 28.173379
+  }
+},
+{
+  "id": "19",
+  "name": "HIL_PLACE_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_PLACE_2020/{z}/{x}/{y}.pbf",
+  "layer": "HIL_PLACE_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 12,
+  "fillColor": "green",
+  "lineColor": "white", 
+  "rectangle": {
+      "west": -82.823669,
+      "south": 27.57055,
+      "east": -82.054012,
+      "north": 28.173379
+  }
+},
+{
+  "id": "20",
+  "name": "HIL_BLKGRP_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/HIL_BLKGRP_2020/{z}/{x}/{y}.pbf",
+  "layer": "HIL_BLKGRP_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "purple",
+  "lineColor": "white",  
+  "rectangle": {
+      "west": -82.823669,
+      "south": 27.57055,
+      "east": -82.054012,
+      "north": 28.173379
+  }
+},
+
+//////////////////////////////////////////////////////////////////////////
+  {
+  "id": "21",
+  "name": "SAR_ZCTA_2020",
+  "type": "mvt",
+  //"url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_ZCTA_2020/{z}/{x}/{y}.pbf",
+  "url": "MapTiles2020/SAR_ZCTA_2020/{z}/{x}/{y}.pbf",
+  "layer": "SAR_ZCTA_2020",
+  "minimumZoom": 1,
+  "maximumZoom": 14,
+  "fillColor": "green",
+  "lineColor": "white",   
+  "rectangle": {
+      "west": -82.705438,
+      "south": 26.945359,
+      "east": -82.056686,
+      "north": 27.389786
+  }
+},
+{
+  "id": "22",
+  "name": "SAR_TRACT_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_TRACT_2020/{z}/{x}/{y}.pbf",
+  "layer": "SAR_TRACT_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "blue",
+  "lineColor": "white", 
+  "rectangle": {
+    "west": -82.705438,
+      "south": 26.945359,
+      "east": -82.056686,
+      "north": 27.389786
+  }
+},
+{
+  "id": "23",
+  "name": "SAR_PLACE_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_PLACE_2020/{z}/{x}/{y}.pbf",
+  "layer": "SAR_PLACE_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "green",
+  "lineColor": "white", 
+  "rectangle": {
+      "west": -82.705438,
+      "south": 26.945359,
+      "east": -82.056686,
+      "north": 27.389786
+  }
+},
+{
+  "id": "24",
+  "name": "SAR_BLKGRP_2020",
+  "type": "mvt",
+  "url": "https://testmvtbucket.s3.us-east-2.amazonaws.com/SAR_BLKGRP_2020/{z}/{x}/{y}.pbf",
+  "layer": "SAR_BLKGRP_2020",
+  "minimumZoom": 0,
+  "maximumZoom": 14,
+  "fillColor": "purple",
+  "lineColor": "white",  
+  "rectangle": {
+    "west": -82.705438,
+    "south": 26.945359,
+    "east": -82.056686,
+    "north": 27.389786
+  }
+}
+
+    ],
+    "viewerMode": "3dSmooth",
+    "baseMaps": {
+      "defaultBaseMapId": "basemap-positron",
+      "previewBaseMapId": "basemap-positron"
+    }
+  }
+  
