@@ -1,7 +1,7 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   // simpleMVTNew, TEST_MVT, TEST_MVT_new, workingMVT, masterCatalogue2
-  "initializationUrls": ["masterCatalogue2"],
+  "initializationUrls": ["workingMVT"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
