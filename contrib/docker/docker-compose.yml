@@ -8,6 +8,7 @@ volumes:
   ckan_storage:
   pg_data:
   solr_data:
+  subdomain_ssl:
 
 services:
   nginx:
@@ -20,6 +21,8 @@ services:
     ports:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"
+    volumes:
+      - subdomain_ssl:/etc/nginx/certs/
 
   ckan:
     container_name: ckan
