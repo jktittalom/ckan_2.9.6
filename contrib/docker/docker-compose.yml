@@ -9,6 +9,7 @@ volumes:
   pg_data:
   solr_data:
   subdomain_ssl:
+  certbot_ssl:
 
 services:
   nginx:
@@ -21,9 +22,16 @@ services:
     ports:
       - "0.0.0.0:80:80"
       - "0.0.0.0:443:443"
+    restart: always
     volumes:
       - subdomain_ssl:/etc/nginx/certs/
+      - certbot_ssl:/var/www/certbot/:ro
 
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - certbot_ssl:/var/www/certbot/:rw
+  
   ckan:
     container_name: ckan
     build:
