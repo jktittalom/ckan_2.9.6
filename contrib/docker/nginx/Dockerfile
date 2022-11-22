@@ -10,5 +10,6 @@ COPY setup/ckan.conf ${NGINX_DIR}/conf.d/
 
 RUN mkdir -p ${NGINX_DIR}/certs
 COPY setup/ckan-local.* ${NGINX_DIR}/certs/
+COPY setup/node-local.* ${NGINX_DIR}/certs/
 
 EXPOSE 81
